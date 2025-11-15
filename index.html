@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS | Visionary Frontend Architect & Digital Experience Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-exo">
+    <!-- Navigation -->
+    <nav class="nexus-nav">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-orbitron font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">NEXUS</a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link">Projects</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 transition">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="menu-toggle" class="md:hidden p-2 rounded-lg bg-white/5 hover:bg-white/10 transition">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-glow"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="matrix-bg"></div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container mx-auto px-6">
+            <div class="hero-content">
+                <div class="inline-flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-cyan-400/30 mb-8">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-cyan-300">Visionary Frontend Architect</span>
+                </div>
+                
+                <h1 class="nexus-title">NEXUS</h1>
+                
+                <div class="typing-container">
+                    <div class="typing-text" id="typing-text">Crafting Digital Futures</div>
+                </div>
+                
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
+                    I transform visionary ideas into immersive digital experiences. 
+                    With cutting-edge technology and innovative design, I create the future of web interaction.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center">
+                    <a href="#projects" class="nexus-btn group">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-down group-hover:translate-y-1 transition-transform"></i>
+                    </a>
+                    <a href="#contact" class="nexus-btn group">
+                        <span>Start a Project</span>
+                        <i class="fas fa-rocket group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">About Nexus</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="nexus-card">
+                        <h3 class="text-2xl font-bold mb-4 text-cyan-400">The Vision</h3>
+                        <p class="text-gray-300 mb-6">
+                            I am a visionary frontend architect with a passion for pushing the boundaries of digital experiences. 
+                            My work combines cutting-edge technology with artistic design to create immersive web applications 
+                            that captivate users and drive innovation.
+                        </p>
+                        <p class="text-gray-300 mb-6">
+                            With expertise in React, Vue, WebGL, and emerging technologies, I transform complex ideas into 
+                            elegant, performant solutions that redefine what's possible on the web.
+                        </p>
+                        <div class="flex space-x-4">
+                            <div class="text-center">
+                                <div class="text-3xl font-orbitron font-bold text-cyan-400 mb-2">8+</div>
+                                <div class="text-gray-400">Years Experience</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-orbitron font-bold text-purple-400 mb-2">150+</div>
+                                <div class="text-gray-400">Projects Delivered</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-orbitron font-bold text-pink-400 mb-2">2.5M+</div>
+                                <div class="text-gray-400">Users Impacted</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="nexus-card text-center">
+                        <i class="fas fa-bolt text-4xl text-cyan-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Performance</h4>
+                        <p class="text-gray-300">Lightning-fast applications with optimal user experience</p>
+                    </div>
+                    <div class="nexus-card text-center">
+                        <i class="fas fa-paint-brush text-4xl text-purple-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Design</h4>
+                        <p class="text-gray-300">Aesthetically stunning interfaces with intuitive UX</p>
+                    </div>
+                    <div class="nexus-card text-center">
+                        <i class="fas fa-code text-4xl text-pink-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Innovation</h4>
+                        <p class="text-gray-300">Pushing boundaries with cutting-edge technologies</p>
+                    </div>
+                    <div class="nexus-card text-center">
+                        <i class="fas fa-rocket text-4xl text-cyan-400 mb-4"></i>
+                        <h4 class="text-xl font-bold mb-2">Scalability</h4>
+                        <p class="text-gray-300">Architected for growth and future expansion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-black/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Technical Mastery</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-cyan-400">Frontend Technologies</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React & Next.js</span>
+                                <span class="skill-percentage">98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Vue & Nuxt.js</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percentage">96%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="96"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">WebGL & Three.js</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-purple-400">Advanced Technologies</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AI Integration</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">WebAssembly</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Blockchain DApps</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AR/VR Experiences</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Innovative Projects</h2>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Quantum Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quantum Analytics Dashboard</h3>
+                        <p class="project-description">
+                            AI-powered business intelligence platform with real-time data visualization 
+                            and predictive analytics for enterprise decision-making.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">WebGL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Nexus E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nexus E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Next-generation online shopping experience with AR product visualization, 
+                            AI recommendations, and seamless checkout process.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">WebRTC</span>
+                            <span class="tech-tag">AR</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                             alt="NeuroFit AI Training App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-app-store"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-code"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NeuroFit AI Training App</h3>
+                        <p class="project-description">
+                            AI-powered fitness coaching application with real-time form analysis, 
+                            personalized workout plans, and progress tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">TensorFlow.js</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-black/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Start a Project</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="nexus-card">
+                        <h3 class="text-2xl font-bold mb-4 text-cyan-400">Get In Touch</h3>
+                        <p class="text-gray-300 mb-6">
+                            Ready to bring your visionary idea to life? Let's discuss how we can create 
+                            something extraordinary together.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-cyan-400 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-gray-300">hello@nexus.dev</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-purple-400 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p class="text-gray-300">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-pink-400 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold">Location</h4>
+                                    <p class="text-gray-300">San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Project subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-input" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="nexus-btn w-full justify-center">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="nexus-footer">
+        <div class="footer-glow"></div>
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-orbitron font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">NEXUS</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                    Crafting the future of digital experiences through innovative frontend solutions and cutting-edge technology.
+                </p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+                
+                <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+                    <p>&copy; 2024 NEXUS. All rights reserved. Crafted with <i class="fas fa-heart text-red-400 mx-1"></i> and innovation.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js">  </script>
+</body>
+</html>

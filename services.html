@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Nexus - Visionary Frontend Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-exo">
+    <!-- Navigation -->
+    <nav class="nexus-nav">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-orbitron font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">NEXUS</a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link active">Services</a>
+                    <a href="portfolio.html" class="nav-link">Projects</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-white/5 hover:bg-white/10 transition">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="menu-toggle" class="md:hidden p-2 rounded-lg bg-white/5 hover:bg-white/10 transition">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="nav-glow"></div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="matrix-bg"></div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container mx-auto px-6">
+            <div class="hero-content">
+                <div class="inline-flex items-center space-x-3 bg-white/5 rounded-full px-4 py-2 border border-cyan-400/30 mb-8">
+                    <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-cyan-300">Premium Digital Solutions</span>
+                </div>
+                
+                <h1 class="page-title">SERVICES</h1>
+                
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Comprehensive digital solutions that transform your vision into extraordinary digital experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Premium Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Frontend Architecture</h3>
+                    <p class="text-gray-300 mb-6 flex-grow">
+                        Scalable and maintainable frontend architectures built with modern frameworks 
+                        and best practices for optimal performance and developer experience.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>React & Next.js Solutions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Vue & Nuxt.js Applications</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>TypeScript Integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Performance Optimization</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="nexus-btn justify-center mt-auto">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">UI/UX Design</h3>
+                    <p class="text-gray-300 mb-6 flex-grow">
+                        Intuitive and visually stunning user interfaces designed with user experience 
+                        at the forefront, creating engaging and accessible digital products.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>User-Centered Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Interactive Prototypes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Design Systems</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Accessibility Compliance</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="nexus-btn justify-center mt-auto">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">3D & WebGL Experiences</h3>
+                    <p class="text-gray-300 mb-6 flex-grow">
+                        Immersive 3D web experiences using WebGL and Three.js that push the boundaries 
+                        of what's possible in the browser.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Interactive 3D Websites</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Product Configurators</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Virtual Showrooms</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>AR/VR Integration</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="nexus-btn justify-center mt-auto">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">AI Integration</h3>
+                    <p class="text-gray-300 mb-6 flex-grow">
+                        Smart applications powered by artificial intelligence and machine learning 
+                        for enhanced user experiences and automation.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>AI-Powered Features</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Machine Learning Models</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Natural Language Processing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Predictive Analytics</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="nexus-btn justify-center mt-auto">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Progressive Web Apps</h3>
+                    <p class="text-gray-300 mb-6 flex-grow">
+                        Fast, reliable, and engaging progressive web applications that work seamlessly 
+                        across all devices and platforms.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Offline Functionality</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Push Notifications</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>App-Like Experience</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Cross-Platform Compatibility</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="nexus-btn justify-center mt-auto">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">Performance Optimization</h3>
+                    <p class="text-gray-300 mb-6 flex-grow">
+                        Comprehensive performance audits and optimization strategies to ensure 
+                        your applications run at lightning speed.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Core Web Vitals Optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Bundle Size Reduction</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Lazy Loading Strategies</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Caching & CDN Implementation</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="nexus-btn justify-center mt-auto">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section bg-black/30">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Development Process</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-cyan-400">Discovery & Strategy</h3>
+                        <p class="text-gray-300">
+                            We begin by deeply understanding your vision, goals, and target audience. 
+                            Through collaborative workshops and research, we define the project scope, 
+                            technical requirements, and success metrics.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-purple-400">Design & Prototyping</h3>
+                        <p class="text-gray-300">
+                            Creating intuitive user experiences and stunning visual designs. We develop 
+                            interactive prototypes to validate concepts and ensure the final product 
+                            meets user expectations and business objectives.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-pink-400">Development & Implementation</h3>
+                        <p class="text-gray-300">
+                            Building robust, scalable solutions using cutting-edge technologies. We 
+                            follow agile methodologies with continuous integration and regular client 
+                            feedback to ensure quality and alignment with your vision.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-cyan-400">Testing & Optimization</h3>
+                        <p class="text-gray-300">
+                            Rigorous testing across devices and platforms to ensure flawless performance. 
+                            We optimize for speed, accessibility, and user experience before launch.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-purple-400">Launch & Support</h3>
+                        <p class="text-gray-300">
+                            Seamless deployment and ongoing support to ensure your digital product 
+                            continues to perform optimally. We provide documentation and training 
+                            for your team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Flexible Pricing</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h3 class="text-2xl font-bold mb-4 text-cyan-400">Starter</h3>
+                    <div class="text-4xl font-orbitron font-bold mb-6">$4,999</div>
+                    <p class="text-gray-300 mb-6">Perfect for small projects and startups</p>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Single Page Application</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Responsive Design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>Basic Animations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-400 mr-3"></i>
+                            <span>2-3 Week Delivery</span>
+                        </li>
+                        <li class="flex items-center opacity-50">
+                            <i class="fas fa-times text-gray-500 mr-3"></i>
+                            <span>Advanced 3D Elements</span>
+                        </li>
+                        <li class="flex items-center opacity-50">
+                            <i class="fas fa-times text-gray-500 mr-3"></i>
+                            <span>AI Integration</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="nexus-btn justify-center w-full">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Professional</h3>
+                    <div class="text-4xl font-orbitron font-bold mb-6">$12,999</div>
+                    <p class="text-gray-300 mb-6">Ideal for growing businesses</p>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Multi-Page Application</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Advanced Animations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Interactive Elements</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>4-6 Week Delivery</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-400 mr-3"></i>
+                            <span>Basic 3D Elements</span>
+                        </li>
+                        <li class="flex items-center opacity-50">
+                            <i class="fas fa-times text-gray-500 mr-3"></i>
+                            <span>Advanced AI Integration</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="nexus-btn justify-center w-full">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">Enterprise</h3>
+                    <div class="text-4xl font-orbitron font-bold mb-6">Custom</div>
+                    <p class="text-gray-300 mb-6">For complex, large-scale projects</p>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Full-Stack Application</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Advanced 3D & WebGL</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>AI & ML Integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Custom Timeline</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Ongoing Support</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-pink-400 mr-3"></i>
+                            <span>Dedicated Team</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="nexus-btn justify-center w-full">
+                        <span>Contact Us</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-black/30">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+                Let's discuss your project and create something extraordinary together.
+            </p>
+            <a href="contact.html" class="nexus-btn group">
+                <span>Start Your Project</span>
+                <i class="fas fa-rocket group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="nexus-footer">
+        <div class="footer-glow"></div>
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h3 class="text-2xl font-orbitron font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">NEXUS</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                    Crafting the future of digital experiences through innovative frontend solutions and cutting-edge technology.
+                </p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+                
+                <div class="border-t border-white/10 pt-8 text-center text-gray-400">
+                    <p>&copy; 2024 NEXUS. All rights reserved. Crafted with <i class="fas fa-heart text-red-400 mx-1"></i> and innovation.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                document.documentElement.classList.toggle('dark');
+                const icon = themeToggle.querySelector('i');
+                if (document.documentElement.classList.contains('dark')) {
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                } else {
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                }
+            });
+        }
+        
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.hidden.md\\:flex');
+        
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('flex');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-16');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('w-full');
+                navLinks.classList.toggle('bg-gray-900');
+                navLinks.classList.toggle('p-4');
+                navLinks.classList.toggle('space-y-4');
+            });
+        }
+    </script>
+</body>
+</html>
